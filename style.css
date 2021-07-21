@@ -1,0 +1,12 @@
+body {
+    background-color: lightcoral;
+}
+
+/* Style my YOLO image */
+#yoloImg {
+    width: 200px;
+}
+
+ul button {
+    font-size: 36px;
+}
