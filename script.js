@@ -56,7 +56,7 @@ function onReady() {
     let input = em.parent().siblings('input');
     console.log('input', input);
 
-let inputText = input.val();
+    let inputText = input.val();
     
     let fancyUl = $('#fancyUl');
     let button = fancyUl.find('li > button');
