@@ -12,7 +12,6 @@ function onReady() {
     // event listener
     // event registration
     $('#addBtn').on('click', addToList);
-}
 
     // handle delete button events
     console.log('.deleteBtn', $('.deleteBtn'));
@@ -23,8 +22,15 @@ function onReady() {
     // "event delegation"
     $(document).on('click', '.deleteBtn', deleteItem);
 
+    // setup an event listener
+    // for "mouseover" event
+    console.log($('#yolo'));
+    
+    $('#yolo').on('mouseenter', onMouseEnter);
 
-function addToList() {
+} // end onReady
+
+ function addToList() {
     console.log('button got clicked');
 
     // grab the value of my form input
@@ -41,6 +47,22 @@ function addToList() {
 
     // clear my input
     $('#aboutYou').val('')
+}
+
+function onMouseEnter() {
+    console.log('onMouseEnter');
+    
+    // change to light blue
+    // first, target the element
+    let yolo = $('yolo');
+    //this adds a background style light blue to the element
+    //yolo.css('background-color', 'blue');
+
+    // instead of using 'style' attributes,
+    // lets use CSS classes
+    //yolo.addClass('highlight');
+    //yolo.removeClass('highlight');
+    yolo.toggleClass('highlight');
 }
 
 function deleteItem(){

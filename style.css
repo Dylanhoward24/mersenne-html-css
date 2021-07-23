@@ -14,3 +14,15 @@ img {
 ul button {
     font-size: 36px;
 }
+
+#yoloDiv > span {
+    display: block;
+    font-size: 56px;
+    color: green;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.highlight {
+    background-color: lightblue;
+}
